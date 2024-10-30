@@ -1,0 +1,102 @@
+html body {
+    margin: 0;
+    height: 100%;
+    background-color: #EEE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #FCFCFC;
+    padding: 0px 80px;
+    box-sizing: border-box;
+}
+
+.social_icons {
+    display: flex;
+    gap: 20px;
+}
+
+.button_group {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.btn {
+    text-decoration: none;
+}
+
+img {
+    height: 40px;
+}
+
+.ico {
+    width: 24px;
+    height: 24px;
+}
+
+.menu {
+    display: none;
+}
+
+.vertical {
+    animation-name: rotate90;
+    animation-duration: 0.4s;
+    transform: rotate(90deg);
+}
+
+.horizontal {
+    animation-name: rotate0;
+    animation-duration: 0.4s;
+    transform: rotate(0deg);
+}
+
+.mobile_menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.group_button_mobile {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 24px;
+    background-color: #DEDEDE;
+    padding: 40px 24px;
+    margin: 0;
+}
+
+@media (max-width: 960px)  {
+
+    nav {
+        padding: 0px 32px;
+    }
+
+}
+
+@keyframes rotate90 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotate0 {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
