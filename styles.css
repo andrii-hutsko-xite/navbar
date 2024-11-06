@@ -59,26 +59,30 @@ img {
 }
 
 .mobile_menu {
-    display: none;
+    display: flex;
     margin: 0;
     padding: 0;
-}
-
-.group_button_mobile {
-    display: flex;
-    gap: 24px;
-    flex-direction: column;
-    list-style-type: none;
-    font-size: 24px;
-    background-color: #DEDEDE;
-    padding: 40px 24px;
-    margin: 0;
 }
 
 @media (max-width: 960px)  {
 
     nav {
         padding: 0px 32px;
+    }
+    
+    .button_group {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        list-style-type: none;
+        font-size: 24px;
+        background-color: #DEDEDE;
+        padding: 40px 24px;
+        margin: 0;
+    }
+
+    .menu {
+        display: block;
     }
 
 }

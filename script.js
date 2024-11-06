@@ -15,25 +15,25 @@ window.addEventListener("resize", function() {
 
 // SETTING MOBILE VS DESKTOP CONTEXTS
 
-function Mobile() {
-    nav_links.style.display = "none";
-    social_icons.style.display = "none";
-    menu.style.display = "block";
-}
+// function Mobile() {
+//     nav_links.style.display = "none";
+//     social_icons.style.display = "none";
+//     menu.style.display = "block";
+// }
 
-function Desktop() {
-    nav_links.style.display = "flex";
-    social_icons.style.display = "flex";
-    menu.style.display = "none";
-}
+// function Desktop() {
+//     nav_links.style.display = "flex";
+//     social_icons.style.display = "flex";
+//     menu.style.display = "none";
+// }
 
-function checkWindow() {
-    if (this.window.innerWidth <= break_point) {
-        Mobile();
-    } else {
-        Desktop();
-    }  
-}
+// function checkWindow() {
+//     if (this.window.innerWidth <= break_point) {
+//         Mobile();
+//     } else {
+//         Desktop();
+//     }  
+// }
 
 // CLICKING MENU BUTTON (MOBILE)
 
